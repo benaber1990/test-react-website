@@ -1,23 +1,20 @@
 import logo from "./logo.svg";
 import "./App.css";
+import TileComp from "./components/TileComp";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload with these updates
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <div className="App">
+        <TileComp title="Today" />
+        <TileComp title="Next" />
+        <TileComp title="Tomoz" />
+      </div>
+      <div className="App">
+        <TileComp title="Completed" />
+        <TileComp title="Issue" />
+        <TileComp title="Assigned" />
+      </div>
     </div>
   );
 }
